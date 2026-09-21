@@ -1,31 +1,30 @@
 function Watchlist({ watchlist, onRemove }) {
   return (
-    <div className="card shadow-sm">
-      <div className="card-header bg-dark text-white">
-        My Watchlist ({watchlist.length})
-      </div>
+    <aside className="lux-panel">
+      <div className="lux-panel-sub">Your Selection</div>
+      <h2 className="lux-panel-title">My Watchlist ({watchlist.length})</h2>
 
       {watchlist.length === 0 ? (
-        <div className="card-body text-muted">Your watchlist is empty.</div>
+        <div className="lux-empty">Your watchlist is empty.</div>
       ) : (
-        <ul className="list-group list-group-flush">
-          {watchlist.map((movie) => (
-            <li key={movie.id} className="list-group-item d-flex justify-content-between align-items-center">
-              <div>
-                <strong>{movie.title}</strong>
-                <br />
-                <small className="text-muted">
-                  {movie.genre} • {movie.year} • ⭐ {movie.rating}
-                </small>
+        <div className="mt-3">
+          {watchlist.map((movie, index) => (
+            <div key={movie.id} className="lux-item">
+              <span className="lux-item-no">{index + 1}</span>
+              <div className="lux-item-info">
+                <div className="lux-item-title">{movie.title}</div>
+                <div className="lux-item-meta">
+                  {movie.genre} · {movie.year} · ★ {movie.rating}
+                </div>
               </div>
-              <button className="btn btn-sm btn-outline-danger" onClick={() => onRemove(movie.id)}>
+              <button className="lux-remove" onClick={() => onRemove(movie.id)}>
                 Remove
               </button>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
-    </div>
+    </aside>
   );
 }
 

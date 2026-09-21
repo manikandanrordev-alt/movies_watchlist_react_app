@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --bg: #0a0a0c;
+  --panel: #131316;
+  --line: rgba(201, 169, 110, 0.22);
+  --gold: #c9a96e;
+  --gold-soft: #ead9b0;
+  --text: #f1ece2;
+  --muted: #8a867c;
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 50% -10%, rgba(201, 169, 110, 0.12), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+/* ---------- Header ---------- */
+.lux-header { text-align: center; padding: 2.5rem 0 2rem; }
+.lux-eyebrow {
+  letter-spacing: 0.4em;
+  font-size: 0.7rem;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.lux-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  margin: 0.4rem 0 0.6rem;
+  background: linear-gradient(90deg, var(--gold-soft), var(--gold), var(--gold-soft));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lux-divider {
+  width: 90px; height: 1px; margin: 0 auto;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* ---------- Genre tabs ---------- */
+.lux-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; margin-bottom: 2rem; }
+.lux-tab {
+  background: none; border: none; padding: 0.4rem 0;
+  color: var(--muted);
+  font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+.lux-tab:hover { color: var(--gold-soft); }
+.lux-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* ---------- Movie card ---------- */
+.lux-card {
+  height: 100%;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.lux-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(201, 169, 110, 0.12);
+}
+.lux-poster {
+  position: relative; height: 150px;
+  display: flex; align-items: center; justify-content: center;
+}
+.lux-poster-letter {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6rem; font-weight: 700; line-height: 1;
+  color: rgba(234, 217, 176, 0.22);
+}
+.lux-rating {
+  position: absolute; top: 10px; right: 10px;
+  border: 1px solid var(--gold); color: var(--gold-soft);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2px 10px; font-size: 0.78rem; letter-spacing: 0.05em;
+  border-radius: 999px;
+}
+.lux-lang {
+  position: absolute; bottom: 8px; left: 12px;
+  font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold);
+}
+.lux-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
+.lux-movie-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem;
+}
+.lux-meta { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.08em; margin-bottom: 1rem; }
+.lux-meta span + span::before { content: "•"; margin: 0 0.5rem; color: var(--gold); }
+
+/* ---------- Buttons ---------- */
+.lux-btn {
+  margin-top: auto; width: 100%;
+  background: transparent; color: var(--gold);
+  border: 1px solid var(--gold); border-radius: 2px;
+  padding: 0.55rem 0;
+  font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+.lux-btn:hover:not(:disabled) { background: var(--gold); color: #111; }
+.lux-btn:disabled {
+  border-color: var(--line); color: var(--muted);
+  background: rgba(201, 169, 110, 0.06); cursor: not-allowed;
+}
+
+/* ---------- Watchlist panel ---------- */
+.lux-panel {
+  position: sticky; top: 1.5rem;
+  background: linear-gradient(180deg, #17171b, var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1.5rem 1.3rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+}
+.lux-panel-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem; color: var(--gold-soft); margin: 0;
+}
+.lux-panel-sub { font-size: 0.68rem; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; }
+.lux-empty { color: var(--muted); font-style: italic; padding: 1.5rem 0; text-align: center; }
+.lux-item {
+  display: flex; align-items: center; gap: 0.9rem;
+  padding: 0.85rem 0; border-top: 1px dashed var(--line);
+}
+.lux-item-no { font-family: "Cormorant Garamond", serif; font-size: 1.6rem; color: var(--gold); width: 1.8rem; }
+.lux-item-info { flex: 1; }
+.lux-item-title { font-size: 0.92rem; color: var(--text); }
+.lux-item-meta { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; }
+.lux-remove {
+  background: none; border: none; color: var(--muted);
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.lux-remove:hover { color: #e0705f; }
+
+/* ---------- Messages ---------- */
+.lux-message {
+  border: 1px solid var(--line); border-radius: 4px;
+  padding: 2rem; text-align: center; color: var(--gold-soft);
+  letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem;
+}
+.lux-spinner { color: var(--gold) !important; }

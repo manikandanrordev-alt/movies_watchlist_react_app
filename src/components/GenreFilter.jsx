@@ -1,14 +1,8 @@
 function GenreFilter({ genres, selectedGenre, onSelect }) {
   return (
-    <div className="mb-4 d-flex flex-wrap gap-2">
+    <div className="lux-tabs">
       {genres.map((genre) => (
-        <button
-          key={genre}
-          className={`btn ${
-            selectedGenre === genre ? "btn-dark" : "btn-outline-dark"
-          }`}
-          onClick={() => onSelect(genre)}
-        >
+        <button key={genre} className={`lux-tab ${selectedGenre === genre ? "active" : ""}`} onClick={() => onSelect(genre)} >
           {genre}
         </button>
       ))}
