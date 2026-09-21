@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "title": "Kaithi",
+        "genre": "Crime Thriller",
+        "year": 2019,
+        "rating": 8.5,
+        "language": "Tamil"
+    },
+    {
+        "id": 2,
+        "title": "Thani Oruvan",
+        "genre": "Crime Thriller",
+        "year": 2015,
+        "rating": 8.4,
+        "language": "Tamil"
+    },
+    {
+        "id": 3,
+        "title": "Vikram Vedha",
+        "genre": "Crime Thriller",
+        "year": 2017,
+        "rating": 8.3,
+        "language": "Tamil"
+    },
+    {
+        "id": 4,
+        "title": "Maharaja",
+        "genre": "Crime Thriller",
+        "year": 2024,
+        "rating": 8.4,
+        "language": "Tamil"
+    },
+    {
+        "id": 5,
+        "title": "Drishyam",
+        "genre": "Crime Thriller",
+        "year": 2013,
+        "rating": 8.2,
+        "language": "Malayalam"
+    },
+    {
+        "id": 6,
+        "title": "Drishyam 2",
+        "genre": "Crime Thriller",
+        "year": 2021,
+        "rating": 8.3,
+        "language": "Malayalam"
+    },
+    {
+        "id": 7,
+        "title": "Joseph",
+        "genre": "Crime Thriller",
+        "year": 2018,
+        "rating": 7.8,
+        "language": "Malayalam"
+    },
+    {
+        "id": 8,
+        "title": "Nayattu",
+        "genre": "Crime Thriller",
+        "year": 2021,
+        "rating": 7.7,
+        "language": "Malayalam"
+    },
+    {
+        "id": 9,
+        "title": "Ratsasan",
+        "genre": "Investigation",
+        "year": 2018,
+        "rating": 8.3,
+        "language": "Tamil"
+    },
+    {
+        "id": 10,
+        "title": "Theeran Adhigaaram Ondru",
+        "genre": "Investigation",
+        "year": 2017,
+        "rating": 8.2,
+        "language": "Tamil"
+    },
+    {
+        "id": 11,
+        "title": "Por Thozhil",
+        "genre": "Investigation",
+        "year": 2023,
+        "rating": 7.9,
+        "language": "Tamil"
+    },
+    {
+        "id": 12,
+        "title": "Anjaam Pathiraa",
+        "genre": "Investigation",
+        "year": 2020,
+        "rating": 7.5,
+        "language": "Malayalam"
+    },
+    {
+        "id": 13,
+        "title": "Memories",
+        "genre": "Investigation",
+        "year": 2013,
+        "rating": 7.9,
+        "language": "Malayalam"
+    },
+    {
+        "id": 14,
+        "title": "Kannur Squad",
+        "genre": "Investigation",
+        "year": 2023,
+        "rating": 7.7,
+        "language": "Malayalam"
+    },
+    {
+        "id": 15,
+        "title": "Jai Bhim",
+        "genre": "Courtroom Drama",
+        "year": 2021,
+        "rating": 8.7,
+        "language": "Tamil"
+    },
+    {
+        "id": 16,
+        "title": "Nerkonda Paarvai",
+        "genre": "Courtroom Drama",
+        "year": 2019,
+        "rating": 8.3,
+        "language": "Tamil"
+    },
+    {
+        "id": 17,
+        "title": "Jana Gana Mana",
+        "genre": "Courtroom Drama",
+        "year": 2022,
+        "rating": 8.0,
+        "language": "Malayalam"
+    },
+    {
+        "id": 18,
+        "title": "Nna Thaan Case Kodu",
+        "genre": "Courtroom Drama",
+        "year": 2022,
+        "rating": 7.7,
+        "language": "Malayalam"
+    },
+    {
+        "id": 19,
+        "title": "Love Today",
+        "genre": "Rom-Com",
+        "year": 2022,
+        "rating": 7.4,
+        "language": "Tamil"
+    },
+    {
+        "id": 20,
+        "title": "Oh My Kadavule",
+        "genre": "Rom-Com",
+        "year": 2020,
+        "rating": 8.0,
+        "language": "Tamil"
+    },
+    {
+        "id": 21,
+        "title": "Premam",
+        "genre": "Rom-Com",
+        "year": 2015,
+        "rating": 8.3,
+        "language": "Malayalam"
+    },
+    {
+        "id": 22,
+        "title": "Bangalore Days",
+        "genre": "Rom-Com",
+        "year": 2014,
+        "rating": 8.3,
+        "language": "Malayalam"
+    },
+    {
+        "id": 23,
+        "title": "Thanneer Mathan Dinangal",
+        "genre": "Rom-Com",
+        "year": 2019,
+        "rating": 8.0,
+        "language": "Malayalam"
+    },
+    {
+        "id": 24,
+        "title": "Boss Engira Bhaskaran",
+        "genre": "Comedy",
+        "year": 2010,
+        "rating": 7.4,
+        "language": "Tamil"
+    },
+    {
+        "id": 25,
+        "title": "Kalakalappu",
+        "genre": "Comedy",
+        "year": 2012,
+        "rating": 7.1,
+        "language": "Tamil"
+    },
+    {
+        "id": 26,
+        "title": "In Harihar Nagar",
+        "genre": "Comedy",
+        "year": 1990,
+        "rating": 8.1,
+        "language": "Malayalam"
+    },
+    {
+        "id": 27,
+        "title": "Godfather",
+        "genre": "Comedy",
+        "year": 1991,
+        "rating": 8.4,
+        "language": "Malayalam"
+    },
+    {
+        "id": 28,
+        "title": "Vikram",
+        "genre": "Action",
+        "year": 2022,
+        "rating": 8.3,
+        "language": "Tamil"
+    },
+    {
+        "id": 29,
+        "title": "Master",
+        "genre": "Action",
+        "year": 2021,
+        "rating": 7.3,
+        "language": "Tamil"
+    },
+    {
+        "id": 30,
+        "title": "Lucifer",
+        "genre": "Action",
+        "year": 2019,
+        "rating": 7.3,
+        "language": "Malayalam"
+    },
+    {
+        "id": 31,
+        "title": "Minnal Murali",
+        "genre": "Action",
+        "year": 2021,
+        "rating": 7.8,
+        "language": "Malayalam"
+    }
+]
