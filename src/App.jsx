@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import MovieCard from "./components/MovieCard";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -11,14 +12,14 @@ function App() {
   return (
     <div className="container py-4">
       <h1 className="mb-4 text-center">🎬 Movie Watchlist</h1>
-      <ul className="list-group">
+      <div className="row g-3">
         {movies.map((movie) => (
-          <li key={movie.id} className="list-group-item">
-            <strong>{movie.title}</strong> ({movie.year}) — {movie.genre} •{" "}
-            {movie.language} • ⭐ {movie.rating}
-          </li>
+          <div className="col-sm-6 col-md-4" key={movie.id}>
+            <MovieCard title={movie.title} genre={movie.genre} year={movie.year} rating={movie.rating} language={movie.language}
+            />
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
